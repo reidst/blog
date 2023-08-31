@@ -2,7 +2,7 @@
 layout: post
 title:  "I'm Not Dead!"
 date:   2023-07-08 15:28:05 -0500
-categories: jekyll update
+categories: dts
 ---
 Apologies for missing several weeks. It's easy to get sucked into work and forget to take a step back every once in a while and self-evaluate. I have trouble remembering to update my personal journal every month, so a weekly schedule is especially tough. Most Fridays I'm too mentally exhausted to write a reflection, regardless of the fact that it would probably help me clear my mind.
 

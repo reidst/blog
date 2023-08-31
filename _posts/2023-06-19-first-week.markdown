@@ -2,7 +2,7 @@
 layout: post
 title:  "First Week"
 date:   2023-06-19 23:58:48 -0500
-categories: jekyll update
+categories: dts
 ---
 Well, first week survived! I meant to write this on Friday, but I was mentally exhausted from work. And to be honest, I don't particularly enjoy writing. However, we did make lots of progress last week: I began focused work on the Hendrix Today app, and Teddy began on the Lake Nixon scheduler app. This division of labor works particularly well for me; I don't think I could keep up with or make any reasonable progress on five separate apps at once. This way, I can dive deep into understanding, fixing, and building one app in great detail.
 

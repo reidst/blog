@@ -2,7 +2,7 @@
 layout: post
 title:  "Goodbye, VBA"
 date:   2023-07-26 11:07:12 -0500
-categories: jekyll update
+categories: dts
 ---
 Good news: we're not using VBA anymore! Bad news: I wasted a week of my life working on a project that was doomed from the start. Oh well - science is about disproving, not proving, and it is called "Computer _Science_" after all.
 

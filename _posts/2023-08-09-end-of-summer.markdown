@@ -2,7 +2,7 @@
 layout: post
 title:  "End of Summer"
 date:   2023-08-09 22:42:17 -0500
-categories: jekyll update
+categories: dts
 ---
 And so we have reached the end. After eight weeks of work - around seven of which were spent on the same project - I've learned much more about the software development process than I did in the Mobile App Development class I took last fall, in which I participated in creating some of the apps now under Disco Tray's management. In that class, we only made five mobile apps, the first of which was the default Flutter "hello world" app and the last of which was our final project. Each student only dedicated around 30-40 hours to the final, since that was one of the requirements for the class's Odyssey credit, meaning each student probably put in under 100 hours of work across the entire semester. This summer, I spent 282 hours on two projects, which is probably the reason I feel so much more confident in my understanding of the whole process.
 
