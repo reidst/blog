@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Simon Reid"
 title:  "Goodbye, VBA"
 date:   2023-07-26 11:07:12 -0500
 categories: dts

@@ -1,5 +1,6 @@
 ---
 layout: post
+author: "Simon Reid"
 title:  "First Week"
 date:   2023-06-19 23:58:48 -0500
 categories: dts
