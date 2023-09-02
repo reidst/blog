@@ -5,3 +5,94 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+a:visited {
+  color: #b700ff;
+}
+
+.post-list {
+  text-align: right;
+}
+
+.post-list .post-meta {
+  font-style: italic;
+}
+
+.site-header, .site-footer {
+  background-color: #ddd;
+}
+
+// CSS for rotating cube at /blog/cube/
+
+.cube-container {
+  width: 200px;
+  height: 200px;
+  perspective: 400px;
+  margin: 100px;
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  transform: rotate3d(1, 1, 0, 45deg);
+  animation: turn 5s linear infinite;
+}
+
+.face {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  border: 8px solid white;
+  position: absolute;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  animation: colors 4s linear infinite;
+
+  p {
+    color: white;
+    font-weight: bolder;
+  }
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+}
+
+.left {
+  transform: translateX(-100px) rotateY(-90deg);
+}
+
+.right {
+  transform: translateX(100px) rotateY(90deg);
+}
+
+.top {
+  transform: translateY(100px) rotateX(-90deg);
+}
+
+.bottom {
+  transform: translateY(-100px) rotateX(90deg);
+}
+
+@keyframes turn {
+  from { transform: rotate3d(0, 0, 0, 0); }
+  to   { transform: rotate3d(1, 2, 3, 360deg); }
+}
+
+@keyframes colors {
+  0%   { background-color: red; }
+  20%  { background-color: yellow; }
+  40%  { background-color: lime; }
+  60%  { background-color: dodgerblue; }
+  80%  { background-color: violet; }
+  100% { background-color: red; }
+}
