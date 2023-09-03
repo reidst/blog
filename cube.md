@@ -3,7 +3,7 @@ layout: page
 title: "Cube"
 permalink: /cube/
 ---
-Big thanks to [Let's make a CSS cube](https://dev.to/joeattardi/let-s-make-a-css-cube-1fed) from dev.to! CSS is _powerful_.
+Big thanks to [Let's make a CSS cube](https://dev.to/joeattardi/let-s-make-a-css-cube-1fed) by Joe Attardi! CSS is _powerful_.
 
 <div class="cube-container">
     <div class="cube">
