@@ -14,14 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Simon's Development Blog
-name: Simon Reid
-email: reidst@hendrix.edu
+author:
+  name: Simon Reid
+  email: reidst@hendrix.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  This is where I will document my development experiences and stories for 
-  personal projects, college coursework, and work for Disco Tray Studios.
+  A place to ramble about college, work, play, and software that blurs the lines
+  between them.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: reidst
+
+minima:
+  date_format: "%Y %-b %-d"
+  social_links:
+    - { platform: github, user_url: "https://github.com/reidst" }
 
 # Build settings
 markdown: kramdown

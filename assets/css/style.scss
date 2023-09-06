@@ -12,14 +12,27 @@ a:visited {
 
 .post-list {
   text-align: right;
+
+  .post-meta {
+    font-style: italic;
+  }
 }
 
-.post-list .post-meta {
-  font-style: italic;
+.site-header,
+.site-footer {
+  background-color: #ddde;
 }
 
-.site-header, .site-footer {
-  background-color: #ddd;
+
+// CSS for Conway's Game of Life background
+
+body {
+  background: url('{{site.baseurl}}/assets/images/cgol_tiling_gliders.png');
+  background-repeat: repeat;
+}
+
+.page-content .wrapper {
+  background-color: #fffe;
 }
 
 // CSS for rotating cube at /blog/cube/
