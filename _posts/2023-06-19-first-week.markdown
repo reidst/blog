@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "First Week"
 date:   2023-06-19 23:58:48 -0500
 categories: dts
@@ -11,7 +11,7 @@ It's a double-edged sword, however, in that my mind is now filled with event car
 
 For example, one of the many problems I encountered came from the Hendrix Today file structure. When I received the project, all the Dart files were in the project `lib/` directory and a few subdirectories, and the files and subdirectories were all named in PascalCase. The Dart/Flutter style guide recommends that such names be formatted in snake_case, so I renamed all 13-or-so of them: `Screens/SearchScreen.dart` became `screens/search_screen.dart`, and so on. I committed and merged the name changes, including updating local imports to use the snake_case names, but other problems started popping up: Dr. Goadrich got build errors saying that the `Event` class was missing, and my VS Code git integration started acting funny in most of the Dart files. Also, any time I checked out the `main` branch or someone else's remote, the subdirectories and `Objects/Event.dart` would be once again capitalized! That was the big hint: all the single-word names were unaffected by my change, except for on my local machine. As it turns out, **Windows and NTFS file systems are _NOT_ case-sensitive by default,** meaning that git only noticed and pushed the changes I made to multi-word file names, since those changes involved adding a character (the underscore). I fixed it by forcing Git to be case-sensitive in its file/directory names using `git config core.ignorecase false`, and after that it was all back to normal.
 
-The current challenge, which I'll be picking back up tomorrow morning, is in the backend data flow. The original Hendrix Today newsletter linked to a Microsoft Form that allowed community members to submit events, announcements, meetings, and lost & found items that would be stored in an Excel spreadsheet. The spreadsheet would then be curated and converted into a newsletter (by hand, I assume) every evening. Although there is a lot of room for improvement, there are some large obstacles in the way, one of which is Microsoft Forms (henceforth referred to as "Forms"). 
+The current challenge, which I'll be picking back up tomorrow morning, is in the backend data flow. The original Hendrix Today newsletter linked to a Microsoft Form that allowed community members to submit events, announcements, meetings, and lost & found items that would be stored in an Excel spreadsheet. The spreadsheet would then be curated and converted into a newsletter (by hand, I assume) every evening. Although there is a lot of room for improvement, there are some large obstacles in the way, one of which is Microsoft Forms (henceforth referred to as "Forms").
 
 Forms, frankly, is a miserable excuse for a form software. It doesn't support time fields and you can't use RegExps to validate text fields, meaning there is no way to securely get valid time data from the user. The old form simply had an optional field named "time and location," which then got renamed by the temporary Python script designed for Firebase uploading as "time," which looks dreadfully confusing on the app frontend. "9am on the Bailey Lawn" is not a time, I can't store that in a `DateTime` object!
 

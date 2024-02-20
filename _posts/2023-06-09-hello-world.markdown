@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "Hello World!"
 date:   2023-06-09 10:37:51 -0500
 categories: dts

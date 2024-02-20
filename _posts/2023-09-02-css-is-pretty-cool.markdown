@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "CSS is pretty (cool)"
 date:   2023-09-02 00:27:52 -0500
 categories: "340"

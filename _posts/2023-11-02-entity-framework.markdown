@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "Entity Framework"
 date:   2023-11-02 15:19:52 -0500
 categories: "340"

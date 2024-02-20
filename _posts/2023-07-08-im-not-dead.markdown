@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "I'm Not Dead!"
 date:   2023-07-08 15:28:05 -0500
 categories: dts

@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "Razor Pages"
 date:   2023-10-16 21:47:43 -0500
 categories: "340"

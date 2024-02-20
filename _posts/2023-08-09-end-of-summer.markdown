@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "End of Summer"
 date:   2023-08-09 22:42:17 -0500
 categories: dts

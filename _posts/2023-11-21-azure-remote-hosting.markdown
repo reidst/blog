@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "Azure Remote Hosting"
 date:   2023-11-21 23:19:23 -0600
 categories: "340"

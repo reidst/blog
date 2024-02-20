@@ -1,6 +1,6 @@
 ---
 layout: post
-author: "Simon Reid"
+author: "Katherine Reid"
 title:  "Databases"
 date:   2023-09-26 22:48:48 -0500
 categories: "340"

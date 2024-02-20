@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-Hi! I'm Simon Reid, a computer science student at Hendrix College and part of the graduating class of 2025.
+Hi! I'm Katherine Reid (she/they), a computer science student at Hendrix College and part of the graduating class of 2025.
 
 I like just about anything to do with computers, but especially:
 - video game design & development
@@ -15,6 +15,6 @@ I also like teaching people. I've been a TA at Hendrix ever since my second seme
 
 This blog covers topics such as:
 - my time working for [Disco Tray Studios](https://discotraystudios.github.io)
-- my coursework for [CSCI 340 Database and Web Systems](https://hendrix-cs.github.io/csci340)
+- my coursework for [CSCI 340 Database and Web Systems](https://hendrix-cs.github.io/csci340) and [CSCI 365 Functional Programming](https://hendrix-cs.github.io/csci365)
 
 I am [reidst](https://github.com/reidst/) on GitHub - check out my latest projects!
