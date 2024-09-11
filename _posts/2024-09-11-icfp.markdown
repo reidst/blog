@@ -1,0 +1,25 @@
+---
+layout: post
+author: "Katherine Reid"
+title:  "Fun with Functional Formalisms"
+date:   2024-09-11 11:03:00 -0500
+categories: "research"
+---
+
+It turns out that without external motivation, I can't maintain a blog. Thankfully, I'm working with Disco Tray Studios once more this semester, meaning I'll be financially and socially obligated to reflect on my work at a regular rate.
+
+Despite the lack of activity, I _did_ do some interesting things this past summer. After passing CSCI 365 Functional Programming with great enthusiasm and curiosity, Dr. Yorgey recruited three other students and myself to spend the summer contributing to [the Disco programming language](https://github.com/disco-lang/disco), a programming language made in Haskell by Dr. Yorgey about 6 years ago to assist in teaching [MATH 240 Discrete Mathematics](https://hendrix-cs.github.io/math240). The language has been used in the classroom for 3 years now, but there are still many improvements to be made. Specifically, I worked on formalizing arithmetic pattern matching:
+
+```disco
+halfCeil : N -> N
+halfCeil(2n)   = n
+halfCeil(2n+1) = n+1
+```
+
+The function `halfCeil` above takes a natural number and attempts to decompose it into either two times a number or one greater than two times a number. This feature was a part of Disco before this summer, but it was implemented in an informal way and didn't always make sense. For instance, for a function `f : Z -> N` the pattern `f(-x) = x` would match all negative integers, binding `x` to a strictly positive number. However, despite `x` technically being a natural number, attempting to return it would be a type error because `x` is given the type `Z`. There was also support for rational patterns, such as `f(1/x) = ...` and even `f(a/b) = ...`, which would match by converting inputs into lowest-form fractions and structurally matching the numerator and denominator as if the fraction were a pair.
+
+This summer, I worked to unify the representation of arithmetic patterns, combining multiplication patterns and addition/subtraction patterns into one linear pattern. Essentially, the pattern represents sets of the form `(a,b) : (Z, Z) -> {ax+b | x : Z}`. The benefit to this representation is that these sets can be more easily unioned, intersected, and complemented to decide at compile time whether the function or case expression in which they are used is totally defined (has a definition for all input values). After a considerable amount of deliberation, we also decided to remove fractional patterns, since they relied on the existence of a canonical representation of rational numbers (their lowest form). This reliance had allowed bugs such as the pattern `f(x/2) = ...` not matching on whole numbers and `f(2/4) = ...` never matching on anything.
+
+I read lots of material about functional programming and pattern matching, including textbooks on category theory and type theory, email threads from the '90s debating Haskell's infamous `n+k` patterns, decidable subsets of arithmetic such as Presburger arithmetic, and systems for composing heterogenous binary relations that don't satisfy the function laws. All the research culminated in a trip with Dr. Yorgey and my fellow researcher Ted around the world to the International Conference on Functional Programming, ICFP 2024, in Milan Italy from September 2-7. Ted and I got to meet professors, PhD and graduate students, and freelance and industry researchers, all of whom were incredibly enthusiastic and passionate about functional programming. The Programming Languages Mentoring Workshop, PLMW, ran all day on the 2nd, and it introduced us to other early graduate and PhD students who made me feel less alone in a sea of postdocs. The following three days were full of rapid-fire talks about all sorts of topics, ranging from the algebraic effect handlers, interactive theorem solvers, low-level language implementation, provably correct LLVM and compiler implementations, and even an opening keynote describing an LLM-based backend development workflow for SaaS products! Trying to follow along with every talk in every session was exhausting, so after the first day I stopped taking notes and focused more on chatting with others during coffee breaks. One professor, Dr. Michael Adams of the National University of Singapore, went to dinner with us and tried to recruit us as his PhD students, which was an intriguing proposition but ultimately not for me
+
+While I decided while at the conference that a future in the field of functional programming is not for me, it did give me inspiration for my thesis project this year. I'm incredibly greatful for the opportunity I had at ICFP, and I hope someday I can return (and understand a few more of the talks!).
